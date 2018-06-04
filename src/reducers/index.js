@@ -1,12 +1,10 @@
-import {ADD_GROCERY} from '../actions';
-import groceryItemsList from '../data/groceryItems.json';
+import grocery from './grocery_reducer';
+import shoppingBag_reducer from './shoppingBag_reducer';
+import {combineReducers} from 'redux';
 
-export default function grocery(state=groceryItemsList,action) {
-    switch (action.type){
-        case ADD_GROCERY:
-            console.log('ADD GROCERY');
-            return state;
-        default:
-            return state;
-    }
-}
+const rootReducer=combineReducers({
+    grocery,
+    shoppingBag_reducer
+});
+
+export default rootReducer;
