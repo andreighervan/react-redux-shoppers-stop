@@ -7,7 +7,7 @@ class Grocery extends Component {
         console.log("this.props ", this.props);
         return (
             <div className="col-md-4">
-                <h2 className="text-center">Grocery Items</h2>
+                <h4 className="text-center">Grocery Items(click to add)</h4>
                 <ul className="list-group">
                     {this.props.grocery.map((item) => {
                         return <li onClick={() => this.props.addGroceryById(item.id)} className="list-group-item"
