@@ -3,6 +3,7 @@ import '../App.css';
 import Grocery from "./Grocery";
 import ShoppingBag from "./ShoppingBag";
 import Stats from "./Stats";
+import PocketMoney from "./PocketMoney";
 
 class App extends Component {
     render() {
@@ -15,6 +16,7 @@ class App extends Component {
                     </div>
                 </div>
                 <div className="row">
+                   <PocketMoney/>
                     <Grocery/>
                     <ShoppingBag/>
                     <Stats/>
